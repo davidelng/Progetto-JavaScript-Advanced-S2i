@@ -125,10 +125,11 @@ submitBtn.addEventListener("click", (e) => {
   // svuotiamo la lista dei risultati
   resultList.innerHTML = "";
 
-  // prendiamo l'input dal campo di ricerca e lo passiamo come argomento alla funzione che si occupa del fetch
+  // prendiamo l'input dal campo di ricerca
   let query = searchField.value;
+  // modifichiamo l'input per assicurarci che sia lowercase e senza spazi, così come richiede l'api
   query = query.toLowerCase().trim();
-  console.log(query)
+  // passiamo il risultato come argomento alla funzione che si occupa del fetch
   fetchBooks(query);
 
   // svuotiamo il campo input e rimettiamo il focus per la prossima ricerca
