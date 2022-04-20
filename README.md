@@ -28,4 +28,4 @@ Ogni carta presenta titolo, autore e un bottone "Show More". Premuto il bottone,
 
 ## Istruzioni per clonare
 
-Non sono presenti pacchetti esterni, l'app può essere utilizzata tranquillamente dal link o clonata in locale senza ulteriore configurazione.
+Il progetto richiede Lodash e altri pacchetti npm. Una volta clonato il tutto, è necessario mandare "npm install" dal terminale per scaricare i node modules necessari.

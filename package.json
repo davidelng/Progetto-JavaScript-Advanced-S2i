@@ -1,0 +1,20 @@
+{
+  "name": "jsadvanced",
+  "description": "Lo scopo del progetto è creare un'applicazione che attraverso delle chiamate API a [Open Library](https://openlibrary.org/developers/api) mostri una lista di libri, in base al genere specificato dall'utente nel campo di ricerca.",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.72.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "webpack-cli": "^4.9.2"
+  }
+}

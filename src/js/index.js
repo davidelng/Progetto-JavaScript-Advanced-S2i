@@ -1,6 +1,8 @@
 // link API:
 // https://openlibrary.org/developers/api
 
+import _ from 'lodash';
+
 // Selezioniamo i nostri elementi nell'HTML, ovvero campo input, bottone e contenitore dei risultati
 const
     submitBtn = document.querySelector("#submit-btn"),
@@ -24,7 +26,7 @@ async function fetchBooks(subject) {
     // il fetch vero e proprio che ci darà la lista dei libri
     let res = await fetch(`https://openlibrary.org/subjects/${subject}.json`);
     let data = await res.json();
-    let books = data.works;
+    let books = _.get(data, 'works', []);
 
     // se non ci sono libri, mandiamo un errore
     if (books.length === 0) {
@@ -93,13 +95,12 @@ async function fetchDescription(key) {
       let data = await res.json();
 
       // controlliamo se è presente una descrizione e settiamo un fallback
-      if(!data.description) {
-        data.description = 'No description available';
-      }
+      let summary = _.get(data, 'description', 'No description available');
+      if (summary.value) { summary = summary.value }
 
       // creiamo un paragrafo ed appendiamo poi il risultato
       let description = document.createElement("p");
-      description.innerText = data.description;
+      description.innerText = summary;
       description.classList.add("description");
 
       bookCard.appendChild(description);
@@ -108,7 +109,7 @@ async function fetchDescription(key) {
       let btn = bookCard.querySelector(".show-more-btn");
       btn.innerText = "Show Less";
     } else {
-      // se ha già una descrizione, la rimuoviamo e bottone mostrerà "Show More"
+      // se ha già una descrizione, la rimuoviamo e il bottone mostrerà "Show More"
       bookCard.removeChild(bookCard.querySelector(".description"));
       let btn = bookCard.querySelector(".show-more-btn");
       btn.innerText = "Show More";
