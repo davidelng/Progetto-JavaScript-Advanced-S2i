@@ -4,7 +4,8 @@
     --bg: #f7f7f7;
     --text: #222;
     /* --accent: #029a91; */
-    --accent: #ce9339;
+    /* --accent: #ce9339; */
+    --accent: #11847d;
     --border: 1px solid rgba(0,0,0,0.15);
     --box-shadow: 0 2px 3px rgb(0 0 0 / 6%);
 }
@@ -31,20 +32,21 @@ input, button {
 
 header {
     padding: 0;
-    border-bottom: var(--border);
     background-color: white;
+    border-bottom: 2px solid var(--accent);
 }
 
 h1 {
     margin: 0;
     padding: 1rem 0;
     font-size: 2rem;
+    color: var(--accent);
 }
 
 h1 span {
-    color: #fff;
+    color: var(--text);
     padding: 1rem;
-    background-color: var(--accent);    
+    /* background-color: var(--accent);     */
 }
 
 h1, h2, h3, h4 {
@@ -85,6 +87,7 @@ main {
     font-size: 3rem;
     font-weight: 500;
     z-index: 3;
+    font-family: serif;
 }
 
 .form-container {
@@ -102,15 +105,16 @@ main {
 
 .search-input {
     flex: 1;
-    height: 3rem;
+    height: 4rem;
     min-width: 5rem;
     padding: 1rem;  
     border: none;
+    font-weight: 400;
 }
 
 .search-button {
     border-radius: 0 4px 4px 0;
-    height: 3rem;
+    height: 4rem;
     padding: 0 1rem;
     border: none;
     background: white;
@@ -189,7 +193,7 @@ footer {
     padding: .5rem;
     text-align: center;
     color: #fff;
-    background-color: var(--accent);
+    background-color: var(--text);
 }
 
 footer p {
@@ -197,7 +201,7 @@ footer p {
 }
 
 footer .vector {
-    color: white;
+    color: #ffffff94;
     text-decoration: none;
     font-size: .5rem;
 }
