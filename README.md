@@ -24,7 +24,7 @@ Ogni carta presenta titolo, autore e un bottone "Show More". Premuto il bottone,
 
 ## Link
 
-[Clicca qui per provare l'app](url)
+[Clicca qui per provare l'app](https://sparkling-cheesecake-2464a5.netlify.app/)
 
 ## Istruzioni per clonare
 
