@@ -14,13 +14,13 @@ Ogni carta presenta titolo, autore e un bottone "Show More". Premuto il bottone,
 
 ## Costruito con
 
-- HTML
-- CSS
-- JS
+-   HTML
+-   CSS
+-   JS
 
 ## Screenshots
 
-![App screenshot](./public/img/screenshot.jpeg)
+![App screenshot](./src/img/screenshot.jpeg)
 
 ## Link
 

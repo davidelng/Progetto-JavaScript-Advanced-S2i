@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500&display=swap");
 
 :root {
     --bg: #f7f7f7;
@@ -6,17 +6,19 @@
     /* --accent: #029a91; */
     /* --accent: #ce9339; */
     --accent: #11847d;
-    --border: 1px solid rgba(0,0,0,0.15);
+    --border: 1px solid rgba(0, 0, 0, 0.15);
     --box-shadow: 0 2px 3px rgb(0 0 0 / 6%);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Fira Sans", sans-serif;
     min-height: 100vh;
     background-color: var(--bg);
     color: var(--text);
@@ -25,7 +27,8 @@ body {
     flex-direction: column;
 }
 
-input, button {
+input,
+button {
     font: inherit;
     color: inherit;
 }
@@ -49,7 +52,10 @@ h1 span {
     /* background-color: var(--accent);     */
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-weight: 400;
 }
 
@@ -72,7 +78,7 @@ main {
 }
 
 .search-container::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
@@ -107,7 +113,7 @@ main {
     flex: 1;
     height: 4rem;
     min-width: 5rem;
-    padding: 1rem;  
+    padding: 1rem;
     border: none;
     font-weight: 400;
 }
@@ -118,7 +124,7 @@ main {
     padding: 0 1rem;
     border: none;
     background: white;
-} 
+}
 
 .search-button span {
     display: block;
@@ -160,7 +166,7 @@ main {
 }
 
 .book-card button {
-    padding: .5rem;
+    padding: 0.5rem;
     color: var(--accent);
     font-weight: 400;
     background: none;
@@ -185,12 +191,14 @@ main {
     font-size: 2rem;
 }
 
-input:focus, button:focus, a:focus {
+input:focus,
+button:focus,
+a:focus {
     outline: 0;
 }
 
 footer {
-    padding: .5rem;
+    padding: 0.5rem;
     text-align: center;
     color: #fff;
     background-color: var(--text);
@@ -203,7 +211,7 @@ footer p {
 footer .vector {
     color: #ffffff94;
     text-decoration: none;
-    font-size: .5rem;
+    font-size: 0.5rem;
 }
 
 .personal-link {
@@ -213,7 +221,7 @@ footer .vector {
 }
 
 .personal-link::after {
-    content: '';
+    content: "";
     width: 100%;
     height: 2px;
     position: absolute;
@@ -221,7 +229,7 @@ footer .vector {
     top: 20px;
     background-color: white;
     left: 0;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 }
 
 .personal-link:hover::after {
