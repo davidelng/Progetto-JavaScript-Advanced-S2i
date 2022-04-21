@@ -126,11 +126,21 @@ main {
     background: white;
 }
 
-.search-button span {
+.search-button .search-text {
     display: block;
     overflow: hidden;
     height: 1px;
     width: 1px;
+}
+
+.search-button .search-icon {
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/search.svg");
 }
 
 .search-button:hover {
