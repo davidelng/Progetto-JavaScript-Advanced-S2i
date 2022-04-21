@@ -28,4 +28,4 @@ Ogni carta presenta titolo, autore e un bottone "Show More". Premuto il bottone,
 
 ## Istruzioni per clonare
 
-Il progetto richiede Lodash e altri pacchetti npm. Una volta clonato il tutto, è necessario mandare "npm install" dal terminale per scaricare i node modules necessari.
+Il progetto richiede Lodash e altri pacchetti da npm. Una volta clonato il tutto, è necessario mandare "npm install" dal terminale per scaricare i node modules necessari.
