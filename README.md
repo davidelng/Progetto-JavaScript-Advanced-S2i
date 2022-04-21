@@ -20,7 +20,7 @@ Ogni carta presenta titolo, autore e un bottone "Show More". Premuto il bottone,
 
 ## Screenshots
 
-![App screenshot](./src/img/screenshot.jpeg)
+![App screenshot](./src/img/screenshot.png)
 
 ## Link
 
