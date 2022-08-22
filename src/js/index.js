@@ -3,7 +3,8 @@
 
 import _ from "lodash";
 import styles from "../css/style.css";
-import img from "../img/search.svg";
+// import searchIcon from "raw-loader!../img/search.svg";
+const searchIcon = require("svg-inline-loader?classPrefix!../img/search.svg");
 
 // Selezioniamo i nostri elementi nell'HTML, ovvero campo input, bottone e contenitore dei risultati
 const submitBtn = document.querySelector("#submit-btn"),

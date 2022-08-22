@@ -16,11 +16,7 @@ module.exports = {
       },
       {
         test: /\.svg$/i,
-        use: [
-          {
-            loader: "url-loader",
-          },
-        ],
+        type: "asset/resource",
       },
     ],
   },
