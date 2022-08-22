@@ -1,13 +1,13 @@
 // link API:
 // https://openlibrary.org/developers/api
 
-import _ from 'lodash';
+import _ from "lodash";
+import styles from "../css/style.css";
 
 // Selezioniamo i nostri elementi nell'HTML, ovvero campo input, bottone e contenitore dei risultati
-const
-    submitBtn = document.querySelector("#submit-btn"),
-    searchField = document.querySelector("#query"),
-    resultList = document.querySelector(".result-container");
+const submitBtn = document.querySelector("#submit-btn"),
+  searchField = document.querySelector("#query"),
+  resultList = document.querySelector(".result-container");
 
 // funzione asincrona per ottenere i libri
 async function fetchBooks(subject) {
@@ -26,7 +26,7 @@ async function fetchBooks(subject) {
     // il fetch vero e proprio che ci darà la lista dei libri
     let res = await fetch(`https://openlibrary.org/subjects/${subject}.json`);
     let data = await res.json();
-    let books = _.get(data, 'works', []);
+    let books = _.get(data, "works", []);
 
     // se non ci sono libri, mandiamo un errore
     if (books.length === 0) {
@@ -43,8 +43,7 @@ async function fetchBooks(subject) {
       bookCard.classList.add("book-card");
 
       // salviamo il titolo, l'autore e la chiave
-      let 
-        title = book.title,
+      let title = book.title,
         author = book.authors[0].name,
         key = book.key;
 
@@ -52,8 +51,7 @@ async function fetchBooks(subject) {
       bookCard.setAttribute("key", key);
 
       // creiamo gli elementi HTML che conterranno le informazioni appena ottenute
-      let 
-        bookTitle = document.createElement("h3"),
+      let bookTitle = document.createElement("h3"),
         bookAuthor = document.createElement("h4"),
         bookBtn = document.createElement("button");
 
@@ -95,8 +93,10 @@ async function fetchDescription(key) {
       let data = await res.json();
 
       // controlliamo se è presente una descrizione e settiamo un fallback
-      let summary = _.get(data, 'description', 'No description available');
-      if (summary.value) { summary = summary.value }
+      let summary = _.get(data, "description", "No description available");
+      if (summary.value) {
+        summary = summary.value;
+      }
 
       // creiamo un paragrafo ed appendiamo poi il risultato
       let description = document.createElement("p");
