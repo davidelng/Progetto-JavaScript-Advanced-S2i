@@ -14,18 +14,18 @@ Ogni carta presenta titolo, autore e un bottone "Show More". Premuto il bottone,
 
 ## Costruito con
 
-- HTML
-- CSS
-- JS
+-   HTML
+-   CSS
+-   JS
 
 ## Screenshots
 
-![App screenshot](./public/img/screenshot.jpeg)
+![App screenshot](./src/img/screenshot.png)
 
 ## Link
 
-[Clicca qui per provare l'app](url)
+[Clicca qui per provare l'app](https://sparkling-cheesecake-2464a5.netlify.app/)
 
 ## Istruzioni per clonare
 
-Il progetto richiede Lodash e altri pacchetti npm. Una volta clonato il tutto, è necessario mandare "npm install" dal terminale per scaricare i node modules necessari.
+Il progetto richiede Lodash e altri pacchetti da npm. Una volta clonato il tutto, è necessario mandare "npm install" dal terminale per scaricare i node modules necessari.
